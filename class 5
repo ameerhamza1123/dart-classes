@@ -1,0 +1,46 @@
+void main() {
+  show();
+
+  print(sum("Flutter", " Development"));
+  print(para("Programming"));
+  print(paraa());
+  print(add());
+
+  dynamic items = [25, 40, 60, 85, "Flutter", "Coding"];
+
+  for (var value in items) {
+    print(value);
+  }
+  print(items);
+
+  List<int> numbers = [5, 10, 15, 20];
+  List<String> languages = ["Java", "Python", "C++", "Dart"];
+  List<bool> status = [false, true];
+
+  for (var num in numbers) {
+    print("Number is $num");
+  }
+
+  print(languages);
+  print(status);
+}
+
+void show() {
+  print("This is a function");
+}
+
+String sum(String a, String b) {
+  print(a + b);
+  return a + b;
+}
+
+String para([a]) {
+  return "This is $a function";
+}
+
+String paraa({a = "Flutter", b = " Programming"}) {
+  print(a + b);
+  return a + b;
+}
+
+String add() => "This is an arrow function";
