@@ -1,10 +1,10 @@
 // Encapsulation
 
-class BankAccount {
+ class BankAccount {
   String _accountNumber;
   double _balance;
 
-  BankAccount(this._accountNumber, this._balance);
+   BankAccount(this._accountNumber, this._balance);
 
   // Getter for balance (read-only)
   double get balance => _balance;
