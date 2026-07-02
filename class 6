@@ -1,0 +1,20 @@
+void main() {
+  student("Ali", message);
+}
+
+// var myfunc = (String text) {
+//   return text;
+// };
+
+// Function display = (String text) {
+//   print(text);
+//   return text;
+// };
+
+Function message = (String word) {
+  return word;
+};
+
+void student(String studentName, Function fun) {
+  print("$studentName ${fun("Welcome")}");
+}
