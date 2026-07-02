@@ -1,0 +1,47 @@
+// Polymorphism
+
+class Shape {
+  void draw() {
+    print('Drawing a shape.');
+  }
+}
+
+class Circle extends Shape {
+  @override
+  void draw() {
+    print('Drawing a small circle.');
+  }
+}
+
+class Rectangle extends Shape {
+  @override
+  void draw() {
+    print('Drawing a large rectangle.');
+  }
+}
+
+void main() {
+  Shape shape = Circle();
+  shape.draw(); // Output: Drawing a small circle.
+
+  shape = Rectangle();
+  shape.draw(); // Output: Drawing a large rectangle.
+}
+
+// Abstraction
+
+abstract class Vehicle {
+  void startEngine(); // Abstract method (no body)
+}
+
+class Car extends Vehicle {
+  @override
+  void startEngine() {
+    print('Car engine is now running.');
+  }
+}
+
+void main2() {
+  var myCar = Car();
+  myCar.startEngine(); // Output: Car engine is now running.
+}
