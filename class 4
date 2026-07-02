@@ -1,0 +1,39 @@
+void main() {
+  int a = 25;
+  int b = 15;
+  (a >= b) ? print("True") : print("False");
+
+  int x = 50;
+  var text = "Flutter";
+  print(x is int);
+  print(text is String);
+
+  int num = 35;
+  var word = "Coding";
+  print(word is! int);
+
+  print(add(20, 40));
+  add(75, 25);
+  add(90, 60);
+
+  print(txt("Flutter", " Development"));
+  print(fun(100));
+}
+
+void show() {
+  print("This is a function");
+}
+
+int add(int a, int b) {
+  int c;
+  c = a + b;
+  return c;
+}
+
+String txt(String c, String d) {
+  return c + d;
+}
+
+int fun(int i) {
+  return i;
+}
